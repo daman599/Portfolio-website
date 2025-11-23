@@ -7,7 +7,6 @@ import Reveal from "../ui/Reveal";
 import Link from "next/link";
 
 const Projects = () => {
-
    return (
       <div className="mt-10 px-4 sm:px-6 md:px-10 lg:px-28 xl:px-48 md:mb-2">
          <Reveal>

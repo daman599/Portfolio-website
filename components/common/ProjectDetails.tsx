@@ -5,6 +5,7 @@ import { ProjectType } from "@/lib/projectsData";
 import Image from "next/image";
 import Reveal from "../ui/Reveal";
 import { useRouter } from "next/navigation";
+import { motion } from "motion/react";
 
 const Project = ({
   project_name,
@@ -20,7 +21,11 @@ const Project = ({
   const router = useRouter();
 
   return (
-    <div className="w-full px-4 sm:px-6 md:px-12 lg:px-28 xl:px-52 mt-14 md:mt-20">
+    <motion.div
+      initial={{ opacity: 0, filter: "blur(2px)" }}
+      whileInView={{ opacity: 1, filter: "blur(0px)" }}
+      transition={{ duration: 0.5, ease: "easeIn" }}
+      className="w-full px-4 sm:px-6 md:px-12 lg:px-28 xl:px-52 mt-14 md:mt-20">
       <button onClick={() => {
         router.push("/");
       }}
@@ -137,7 +142,7 @@ const Project = ({
           </div>
         </>
       )}
-    </div>
+    </motion.div>
   );
 };
 

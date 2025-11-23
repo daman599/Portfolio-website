@@ -6,11 +6,16 @@ import { CometCard } from '@/components/ui/CometCard';
 import { skills } from '@/lib/skills';
 import Image from "next/image"
 import Reveal from '@/components/ui/Reveal';
+import { motion } from "motion/react";
 
 export default function About() {
 
     return (
-        <div className="px-4 sm:px-2 md:px-16 lg:px-20 mt-20">
+        <motion.div
+            initial={{ opacity: 0, filter: "blur(2px)" }}
+            whileInView={{ opacity: 1, filter: "blur(0px)" }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            className="px-4 sm:px-2 md:px-16 lg:px-20 mt-20" >
 
             <div className="flex justify-between items-center px-1 md:px-28 xl:px-48">
                 <Link href={"/"}
@@ -74,6 +79,6 @@ export default function About() {
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div >
     );
 };

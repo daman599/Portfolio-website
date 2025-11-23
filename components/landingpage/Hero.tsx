@@ -1,8 +1,15 @@
+"use client";
+
 import { Vortex } from "@/components/ui/Vortex";
+import { motion } from "motion/react";
 
 const Hero = () => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, filter: "blur(2px)" }}
+      whileInView={{ opacity: 1, filter: "blur(0px)" }}
+      transition={{ duration: 0.5, ease: "easeIn" }}
+    >
       <div className="relative w-full h-screen flex flex-col items-center justify-center mx-auto px-4 sm:px-6 md:px-8">
 
         <div className="absolute inset-0 -z-10 w-full h-full">
@@ -35,7 +42,7 @@ const Hero = () => {
       <div className="absolute bottom-5 md:bottom-4 lg:bottom-0.5 left-1/2 -translate-x-1/2 w-2 sm:w-3 md:w-3.5 z-20 h-9 md:h-11 lg:h-14 bg-[#302F2F] rounded-full flex items-start justify-center pt-2 animate-bounce">
         <div className="bg-[#545050] h-2.5 sm:h-3 md:h-4 lg:h-5 w-0.5 md:w-1 rounded-full"></div>
       </div>
-    </>
+    </motion.div>
   );
 };
 
