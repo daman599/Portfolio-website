@@ -33,4 +33,5 @@ export const designPicsPath: pathType[] = [
     { path: "hero5.png" },
     { path: "hero6.png" },
     { path: "hero7.png" },
+    { path: "hero8.png" },
 ];
