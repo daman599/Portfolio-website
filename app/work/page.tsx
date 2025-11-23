@@ -17,10 +17,10 @@ const parentVariant: Variants = {
 }
 
 const childVariant: Variants = {
-    hidden: { opacity: 0, y: 100 },
+    hidden: { opacity: 0, filter: "blur(2px)" },
     show: {
         opacity: 1,
-        y: 0,
+        filter: "blur(0px)",
         transition: {
             duration: 1.2,
             ease: "easeIn"
@@ -138,7 +138,7 @@ export default function Work() {
                     <div className="pointer-events-none absolute top-0 right-0 bottom-0 h-full w-6 md:w-20 bg-gradient-to-l from-[#000000] to-transparent z-20"></div>
 
                     <motion.div
-                        initial={{ opacity: 0, filter: "blur(3px)" }}
+                        initial={{ opacity: 0, filter: "blur(2px)" }}
                         whileInView={{ opacity: 1, filter: "blur(0px)" }}
                         transition={{ duration: 2, ease: "easeIn" }}
                         viewport={{ once: true }}

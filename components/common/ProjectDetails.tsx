@@ -24,7 +24,7 @@ const Project = ({
     <motion.div
       initial={{ opacity: 0, filter: "blur(2px)" }}
       whileInView={{ opacity: 1, filter: "blur(0px)" }}
-      transition={{ duration: 0.5, ease: "easeIn" }}
+      transition={{ duration: 0.8, ease: "easeIn" }}
       className="w-full px-4 sm:px-6 md:px-12 lg:px-28 xl:px-52 mt-14 md:mt-20">
       <button onClick={() => {
         router.push("/");
