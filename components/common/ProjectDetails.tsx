@@ -24,7 +24,7 @@ const Project = ({
     <motion.div
       initial={{ opacity: 0, filter: "blur(2px)" }}
       whileInView={{ opacity: 1, filter: "blur(0px)" }}
-      transition={{ duration: 0.8, ease: "easeIn" }}
+      transition={{ duration: 0.8, ease: "easeIn", delay: 0.3 }}
       className="w-full px-4 sm:px-6 md:px-12 lg:px-28 xl:px-52 mt-14 md:mt-20">
       <button onClick={() => {
         router.push("/");
@@ -32,9 +32,9 @@ const Project = ({
         className="flex gap-2 rounded-md hover:bg-[#262525]/45 items-center justify-center group px-3 py-2 cursor-pointer"
       >
         <ArrowLeft className="group-hover:text-white text-[#999999] w-3 h-3 sm:w-4 sm:h-4 transition-colors" />
-        <p className="font-medium text-[#999999] group-hover:text-white text-[10px] sm:text-xs transition-colors">
+        <span className="font-medium text-[#999999] group-hover:text-white text-[10px] sm:text-xs transition-colors">
           Back to Projects
-        </p>
+        </span>
       </button>
 
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-5 mt-10">
@@ -53,7 +53,9 @@ const Project = ({
             alt="Project pic"
             width={480}
             height={270}
-            className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-lg hover:shadow-[0_0_25px_rgba(255,255,255,0.2)] transition w-full max-w-sm sm:max-w-md lg:max-w-lg"
+            className="rounded-2xl hover:scale-105 border border-white/10 bg-white/5 
+            backdrop-blur-md shadow-xl hover:shadow-[0_0_25px_rgba(255,255,255,0.2)] 
+            transition-all duration-500 w-full max-w-sm sm:max-w-md lg:max-w-lg"
           />
 
           <div className="flex gap-6 mt-5">
