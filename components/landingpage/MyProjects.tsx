@@ -12,10 +12,11 @@ const Projects = () => {
          initial={{ opacity: 0, filter: "blur(2px)" }}
          whileInView={{ opacity: 1, filter: "blur(0px)" }}
          transition={{ duration: 1, ease: "easeIn" }}
+         viewport={{ once: true }}
          className="mt-10 px-4 sm:px-6 md:px-10 lg:px-28 xl:px-48 md:mb-2">
-         <p className="text-2xl md:text-4xl xl:text-5xl font-medium">
+         <span className="text-2xl md:text-4xl xl:text-5xl font-medium">
             My Projects
-         </p>
+         </span>
 
          <div className="mt-4 xl:mt-6 text-xs lg:text-base font-medium text-[#999999] leading-[25px]">
             <p>A small step in my learning journey.</p>
@@ -34,19 +35,19 @@ const Projects = () => {
                      >
                         <Image
                            src="/Project_cover_pic.jpg"
-                           alt="Normal"
+                           alt="Cover_pic"
                            fill
                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 349px"
-                           className="object-cover transition-all duration-500 ease-in-out 
+                           className="object-cover transition-discrete duration-500 ease-in-out 
                              opacity-100 scale-105 group-hover:opacity-0 group-hover:scale-100"
                         />
 
                         <Image
                            src={project_pic}
-                           alt={`${project_name} preview`}
+                           alt={`${project_name}`}
                            fill
                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 349px"
-                           className="object-cover transition-all duration-500 ease-in-out 
+                           className="object-cover transition-discrete duration-500 ease-in-out 
                              opacity-0 scale-105 group-hover:opacity-100 group-hover:scale-100"
                         />
 
@@ -69,7 +70,7 @@ const Projects = () => {
                )
             )}
          </div>
-      </motion.div>
+      </motion.div >
    );
 };
 

@@ -9,6 +9,7 @@ const Hero = () => {
       initial={{ opacity: 0, filter: "blur(2px)" }}
       whileInView={{ opacity: 1, filter: "blur(0px)" }}
       transition={{ duration: 0.5, ease: "easeIn" }}
+      viewport={{ once: true }}
     >
       <div className="relative w-full h-screen flex flex-col items-center justify-center mx-auto px-4 sm:px-6 md:px-8">
 

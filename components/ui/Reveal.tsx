@@ -12,14 +12,14 @@ interface RevealProps {
 export default function Reveal({
   children,
   delay = 0,
-  duration = 0.8,
-  y = 40,
+  duration = 1,
+  y = 30,
 }: RevealProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y, filter: "blur(2px)" }}
       whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-      transition={{ duration, delay, ease: "easeIn" }}
+      transition={{ duration, delay, ease: "easeInOut" }}
       viewport={{ once: true }}
     >
       {children}
