@@ -19,6 +19,7 @@ export const videosPath: pathType[] = [
     { path: "expensesCard.mp4" },
     { path: "clickAnimation.mp4" },
     { path: "glowButton.mp4" },
+    { path: "hoverButton.mp4" },
 ];
 
 export const Contributions: contributionsType[] = [
