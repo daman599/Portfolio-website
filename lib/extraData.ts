@@ -26,6 +26,7 @@ export const videosPath: pathType[] = [
 export const Contributions: contributionsType[] = [
     { contribution: "fix(ui): resolve overflow bug in filter div with overflow-hidden" },
     { contribution: "layout improvements" },
+    { contribution: "fixed a bug in dropdown div" },
 ];
 
 export const designPicsPath: pathType[] = [
