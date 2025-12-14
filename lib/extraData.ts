@@ -21,6 +21,7 @@ export const videosPath: pathType[] = [
     { path: "glowButton.mp4" },
     { path: "hoverButton.mp4" },
     { path: "likeButton.mp4" },
+    { path: "avatarsStack.mp4" },
 ];
 
 export const Contributions: contributionsType[] = [
