@@ -5,8 +5,10 @@ const Footer = () => {
     <>
       <div className="w-full h-px bg-[#1C1C1C] mt-10 md:mt-24" />
 
-      <div className="flex flex-col md:flex-row justify-between w-full mt-8 max-w-6xl px-4 sm:px-6 md:px-10 lg:px-20 xl:px-1 mx-auto gap-9 md:gap-12 lg:gap-20">
-        <div className="max-w-md">
+      <div className="flex flex-col md:flex-row justify-between mt-8 w-full 
+      px-4 sm:px-6 md:px-10 lg:px-28 xl:px-48 mx-auto gap-9 md:gap-12 lg:gap-20">
+
+        <div className="w-full">
           <Reveal>
             <span className="text-lg md:text-xl font-medium leading-snug">
               daman
@@ -38,9 +40,9 @@ const Footer = () => {
 
         <div>
           <Reveal>
-            <p className="font-normal text-sm md:text-base leading-[25px]">
+            <span className="font-normal text-sm md:text-base leading-[25px]">
               Connect
-            </p>
+            </span>
             <div className="flex gap-4 md:gap-6 lg:gap-10 mt-3 md:mt-4 font-medium text-sm text-[#999999]">
               <a
                 href="https://github.com/daman599"
@@ -63,7 +65,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full xl:max-w-[1145px] h-px bg-[#1C1C1C] mt-8 mx-auto" />
+      <div className="w-full h-px bg-[#1C1C1C] mt-8" />
 
       <p className="flex items-center justify-center my-4 md:my-6 lg:my-7 text-[10px] md:text-xs font-light text-[#CCCCCC]">
         © 2025 daman. All rights reserved.
