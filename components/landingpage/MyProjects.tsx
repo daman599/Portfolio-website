@@ -18,27 +18,26 @@ const Projects = () => {
             My Projects
          </span>
 
-         <div className="mt-4 xl:mt-6 text-xs lg:text-base font-medium text-[#999999] leading-[25px]">
+         <div className="flex flex-col items-start gap-1 mt-2 md:mt-4 xl:mt-6 text-xs lg:text-base font-medium text-[#999999]">
             <p>A small step in my learning journey.</p>
             <p>Created with passion and attention to detail.</p>
          </div>
 
-         <div className="mt-8 lg:mt-9 flex flex-col md:flex-row gap-6 lg:gap-8 md:overflow-x-auto whitespace-nowrap scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+         <div className="mt-8 lg:mt-9 grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 md:overflow-x-auto whitespace-nowrap 
+         scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {projectsData.map(
                ({ id, project_name, project_type, project_pic, month }, index) => (
                   <div key={index} className="flex flex-col overflow-hidden mb-2">
                      <Link href={`/project/${id}`}
                         className="
-                         group max-w-[95%] sm:max-w-[320px] md:max-w-[280px] lg:max-w-[349px] 
-                         aspect-[16/9] relative cursor-pointer group w-full sm:w-[349px] h-[181px] 
-                         overflow-hidden rounded-xl mx-auto md:mx-0"
+                         group relative cursor-pointer w-full h-48 
+                         overflow-hidden rounded-xl"
                      >
                         <Image
                            src="/Project_cover_pic.jpg"
                            alt="Cover_pic"
                            fill
-                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 349px"
-                           className="object-cover transition-discrete duration-500 ease-in-out 
+                           className="object-cover transition-all duration-500 ease-in-out 
                              opacity-100 scale-105 group-hover:opacity-0 group-hover:scale-100"
                         />
 
@@ -46,15 +45,14 @@ const Projects = () => {
                            src={project_pic}
                            alt={`${project_name}`}
                            fill
-                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 349px"
-                           className="object-cover transition-discrete duration-500 ease-in-out 
+                           className="object-cover transition-all duration-500 ease-in-out 
                              opacity-0 scale-105 group-hover:opacity-100 group-hover:scale-100"
                         />
 
-                        <div className="absolute top-3 left-4 px-3 rounded-full bg-[#201F1F] font-light text-[10px]
+                        <span className="absolute top-2 lg:top-3 left-3 md:left-4 px-3 rounded-full bg-[#201F1F] font-light text-[10px] lg:text-xs
                          leading-[30px] transition-opacity duration-300 opacity-100 group-hover:opacity-0">
                            {project_type}
-                        </div>
+                        </span>
                      </Link>
 
                      <span className="mt-3 md:mt-6 font-normal text-lg text-center md:text-left">
