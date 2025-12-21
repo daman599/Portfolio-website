@@ -28,7 +28,7 @@ export default function About() {
                 </Link>
 
                 <a
-                    href="https://drive.google.com/file/d/1PoFiY9zHdEfwjfY1W7cM7e1et_FtY_xW/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1E5lM5kl3v_gr8WANsV0AEwwCmpv0bZ3S/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
