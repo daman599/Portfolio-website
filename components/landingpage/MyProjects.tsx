@@ -26,7 +26,7 @@ const Projects = () => {
          <div className="mt-8 lg:mt-9 grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 md:overflow-x-auto whitespace-nowrap 
          scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {projectsData.map(
-               ({ id, project_name, project_type, project_pic, month }, index) => (
+               ({ id, project_name, project_type, project_pic, month, year }, index) => (
                   <div key={index} className="flex flex-col overflow-hidden mb-2">
                      <Link href={`/project/${id}`}
                         className="
@@ -60,7 +60,7 @@ const Projects = () => {
                      </span>
 
                      <div className="flex mt-1 md:mt-2 items-center justify-center md:justify-start ">
-                        <span className="font-normal text-xs xl:text-sm text-[#999999]">2025</span>
+                        <span className="font-normal text-xs xl:text-sm text-[#999999]">{year}</span>
                         <Dot className="text-[#999999]" />
                         <span className="font-normal text-xs xl:text-sm text-[#999999]">{month}</span>
                      </div>

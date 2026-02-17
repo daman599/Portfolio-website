@@ -10,11 +10,25 @@ export interface ProjectType {
    backend_techStack?: string[],
    things_learnt?: string[],
    month: string,
+   year: string,
 }
 
 export const projectsData: ProjectType[] = [
    {
       id: '1',
+      project_name: "Bentoish-UI",
+      project_description: "A bento-grid styled reusable components library. It is still in developement phase. For now it has only 2 components which you can use in your projects.",
+      project_type: "Frontend",
+      project_pic: "/Bentoish-ui.png",
+      live_link: "https://ui-bentoish.vercel.app",
+      code_link: "https://github.com/daman599/Bentoish-UI",
+      frontend_techStack: ["Next.js", "TailwindCss", "Motion"],
+      things_learnt: ["Structuring components better", "Writing clean and reusable code"],
+      month: "February",
+      year: "2026"
+   },
+   {
+      id: '2',
       project_name: "Finnova",
       project_description: "A landing page created with cool animations.",
       project_type: "Landing page",
@@ -24,9 +38,10 @@ export const projectsData: ProjectType[] = [
       frontend_techStack: ["Next.js", "TailwindCss", "Motion"],
       things_learnt: ["Animations using Motion", "Got inspiration of this design from Dribble"],
       month: "September",
+      year: "2025"
    },
    {
-      id: '2',
+      id: '3',
       project_name: "ResumeMatch AI",
       project_description: "AI-powered resume analyzer that intelligently matches your resume with the most relevant and up-to-date job postings.",
       project_type: "Full-stack web app",
@@ -37,19 +52,6 @@ export const projectsData: ProjectType[] = [
       backend_techStack: ["NextAuth", "MongoDB", "Groq API"],
       things_learnt: ["Writing clean & organized code", "Used caching for fetching same jobs data again & again"],
       month: "July",
-   },
-   {
-      id: '3',
-      project_name: "Funflix",
-      project_description: "Funflix is a smart movie discovery platform that helps users instantly find out which streaming service a movie is available on.",
-      project_type: "Full-stack web app",
-      project_pic: "/Funflix.png",
-      live_link: "https://funflix-frontend.onrender.com/",
-      code_link: "https://github.com/daman599/Funflix",
-      frontend_techStack: ["Javascript", "React.js", "TailwindCss"],
-      backend_techStack: ["Node.js", "Express", "MongoDB", "JWT", "OAuth"],
-      things_learnt: ["This project helped me to understand the workflow of a fullstack web application",
-         "Understood how the React has made life easy for creating dynamic websites"],
-      month: "June",
+      year: "2025"
    }
 ];
