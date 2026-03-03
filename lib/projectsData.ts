@@ -16,14 +16,13 @@ export interface ProjectType {
 export const projectsData: ProjectType[] = [
    {
       id: '1',
-      project_name: "Bentoish-UI",
-      project_description: "A bento-grid styled reusable components library. It is still in developement phase. For now it has only 2 components which you can use in your projects.",
+      project_name: "Shadow",
+      project_description: "A collection of box, drop and text shadows which are ready to use as Tailwind and Vanilla Css.",
       project_type: "Frontend",
-      project_pic: "/Bentoish-ui.png",
-      live_link: "https://ui-bentoish.vercel.app",
-      code_link: "https://github.com/daman599/Bentoish-UI",
+      project_pic: "/Shadow.png",
+      live_link: "https://shadow-mee.vercel.app",
+      code_link: "https://github.com/daman599/shadow",
       frontend_techStack: ["Next.js", "TailwindCss", "Motion"],
-      things_learnt: ["Structuring components better", "Writing clean and reusable code"],
       month: "February",
       year: "2026"
    },
